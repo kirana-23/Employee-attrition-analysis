@@ -1,0 +1,48 @@
+Project Insights — Employee Attrition Analysis
+
+🔷 Overview
+The Employee Attrition Analysis project was performed on a dataset containing 1,470 employees with 35 attributes. The overall attrition rate of the organization is 16.12%, meaning 237 out of 1,470 employees have left the organization. This project aims to identify the key factors that influence employee attrition using Python, SQL, and Power BI.
+
+🔷 Insight 1 — Department wise Attrition
+The Research & Development department recorded the highest attrition with 133 employees leaving, followed by Sales with 92 employees and Human Resources with 12 employees. Although R&D has the highest count, the Sales department has a significantly smaller workforce, making its attrition rate proportionally higher and more concerning for the organization.
+
+🔷 Insight 2 — Gender wise Attrition
+Out of 237 attrited employees, 150 were Male and 87 were Female. Male employees are nearly twice as likely to leave the organization compared to female employees. This suggests that male employees may be more actively seeking better opportunities or facing higher job dissatisfaction.
+
+🔷 Insight 3 — Marital Status wise Attrition
+Single employees recorded the highest attrition with 120 employees leaving, followed by Married employees with 84 and Divorced employees with 33. Single employees have fewer personal responsibilities and financial commitments, making them more open to switching jobs for better opportunities or higher salaries.
+
+🔷 Insight 4 — Overtime Impact on Attrition
+127 employees who worked overtime left the organization compared to 110 who did not work overtime. This clearly indicates that excessive work pressure and overtime are major contributors to employee burnout and attrition. Organizations should monitor overtime hours and ensure healthy work life balance.
+
+🔷 Insight 5 — Job Role wise Attrition
+Laboratory Technicians recorded the highest attrition with 62 employees leaving, followed by Sales Executives with 57 and Research Scientists with 47. On the other hand, senior roles like Managers and Research Directors recorded very low attrition with only 5 and 2 employees respectively. This indicates that junior and mid level roles are more vulnerable to attrition.
+
+🔷 Insight 6 — Job Level wise Attrition
+Job Level 1 employees (Freshers and Entry Level) recorded the highest attrition with 143 employees leaving out of 237 total. This is the most critical finding of this project. Entry level employees are highly likely to leave within their early years as they explore better opportunities, higher salaries, and career growth elsewhere.
+
+🔷 Insight 7 — Age Group wise Attrition
+Employees in the age group of 25 to 35 recorded the highest attrition with 116 employees leaving. This is the career building phase where employees actively look for better roles, salary hikes, and growth opportunities. Employees below 25 recorded 44 attritions, age group 35 to 45 recorded 43, and above 45 recorded 34.
+
+🔷 Insight 8 — Salary wise Attrition
+The average monthly income of attrited employees was ₹4,787 compared to ₹6,832 for retained employees. This is a difference of nearly ₹2,000 per month, clearly indicating that low salary is one of the strongest drivers of employee attrition. Employees who feel underpaid are significantly more likely to leave the organization.
+
+🔷 Insight 9 — Years at Company wise Attrition
+Attrited employees had an average tenure of 5.13 years compared to 7.37 years for retained employees. Employees in their early years at the company are more likely to leave. The first 5 years are the most critical period for employee retention and organizations should focus on engagement and growth during this phase.
+
+🔷 Insight 10 — Business Travel wise Attrition
+Employees who travel rarely recorded the highest attrition with 156 employees leaving, followed by frequent travelers with 69 and non travelers with 12. Frequent business travel causes fatigue and work life imbalance, contributing to attrition among traveling employees.
+
+🔷 Insight 11 — Education Field wise Attrition
+Employees from Life Sciences background recorded the highest attrition with 89 employees leaving, followed by Medical with 63, Marketing with 35, and Technical Degree holders with 32. Life Sciences and Medical graduates have high market demand, giving them more external opportunities and making them more likely to switch organizations.
+
+🔷 Overall Conclusion
+Based on the complete analysis of the employee attrition dataset, the five most critical factors driving attrition in this organization are:
+
+Low Monthly Income — Underpaid employees are significantly more likely to leave
+Entry Level Job (Level 1) — Freshers and junior employees leave the most
+Overtime — Employees working overtime experience burnout and leave
+Single Marital Status — Single employees switch jobs more freely
+Age Group 25–35 — Career building phase leads to frequent job switches
+
+Organizations should focus on competitive salary structures, career growth programs for junior employees, overtime management policies, and strong employee engagement strategies to reduce attrition effectively.
