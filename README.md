@@ -1,280 +1,219 @@
-<div align="center">
+# Employee Attrition Analysis | HR Analytics
 
-<img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" />
-<img src="https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white" />
-<img src="https://img.shields.io/badge/Power_BI-F2C811?style=for-the-badge&logo=powerbi&logoColor=black" />
-<img src="https://img.shields.io/badge/Jupyter-F37626?style=for-the-badge&logo=jupyter&logoColor=white" />
+<p align="center">
+  <img src="https://img.shields.io/badge/Python-Data%20Analysis-blue?logo=python" />
+  <img src="https://img.shields.io/badge/MySQL-SQL-orange?logo=mysql" />
+  <img src="https://img.shields.io/badge/Power%20BI-Dashboard-yellow?logo=powerbi" />
+  <img src="https://img.shields.io/badge/Jupyter-Notebook-orange?logo=jupyter" />
+</p>
 
-# Employee Attrition Analysis
+## 1. Project Overview
 
-**Identifying what makes employees leave — using Python, SQL & Power BI**
+Employee attrition is a significant organizational challenge that can impact workforce productivity, operational efficiency, and employee retention.
 
-[![GitHub](https://img.shields.io/badge/GitHub-kirana--23-181717?style=flat-square&logo=github)](https://github.com/kirana-23)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-kirana--kira23-0A66C2?style=flat-square&logo=linkedin)](https://www.linkedin.com/in/kirana-kira23)
-[![Email](https://img.shields.io/badge/Email-kirana232004@gmail.com-D14836?style=flat-square&logo=gmail)](mailto:kirana232004@gmail.com)
+This project presents an end-to-end HR analytics solution to investigate employee attrition patterns across **1,470 employee records**. Using Python, MySQL, and Power BI, the analysis explores workforce characteristics and examines factors associated with employee turnover, including compensation, overtime, job roles, job levels, and age groups.
 
-</div>
+The project combines exploratory data analysis, SQL-based business analysis, and interactive dashboard development to transform raw HR data into meaningful insights that support data-driven workforce decisions.
 
----
+## 2. Business Objectives
 
-## Overview
+- Measure employee attrition and understand workforce turnover patterns.
+- Identify departments, job roles, and employee groups with higher attrition.
+- Analyze the relationship between monthly income and employee turnover.
+- Investigate the impact of overtime on employee attrition.
+- Examine attrition patterns across age groups and job levels.
+- Explore employee experience, tenure, and satisfaction-related attributes.
+- Develop an interactive HR dashboard to communicate key workforce metrics.
 
-This is an end-to-end HR analytics project analyzing employee attrition patterns across 1,470 employees using real-world HR data. The project explores what drives employees to leave — from salary gaps and overtime burnout to job level and age group — and delivers actionable insights through Python EDA, MySQL queries, and an interactive Power BI dashboard.
+## 3. Dataset Overview
 
-| Metric | Value |
-|--------|-------|
-| Total Employees | 1,470 |
-| Attrited Employees | 237 |
-| Attrition Rate | **16.12%** |
-| Features Analyzed | 35 |
+The analysis uses an HR employee attrition dataset containing employee demographic, professional, compensation, and satisfaction-related information.
 
----
+| Dataset Attribute | Description |
+|---|---|
+| Total Records | 1,470 employees |
+| Total Features | 35 |
+| Target Variable | Attrition |
+| Target Categories | Yes / No |
+| Data Domain | Human Resources |
 
-## Project Structure
+**Key attributes include:**
 
+- Employee demographics: Age, Gender, Marital Status
+- Employment details: Department, Job Role, Job Level
+- Compensation: Monthly Income, Stock Option Level
+- Work environment: OverTime, WorkLifeBalance
+- Employee satisfaction: JobSatisfaction, EnvironmentSatisfaction
+- Experience: TotalWorkingYears, YearsAtCompany, YearsInCurrentRole
+- Target: Attrition
+
+## 4. Technology Stack
+
+| Technology | Application |
+|---|---|
+| Python | Data preparation and exploratory analysis |
+| Pandas | Data manipulation and cleaning |
+| NumPy | Numerical operations |
+| Matplotlib | Data visualization |
+| Seaborn | Statistical visualization |
+| MySQL | SQL queries and business analysis |
+| Power BI | Interactive HR dashboard |
+| Jupyter Notebook | Analysis and documentation |
+
+## 5. Project Workflow
+
+### 5.1 Data Understanding
+- Examined dataset dimensions, structure, and data types.
+- Reviewed employee attributes and their distributions.
+- Identified numerical and categorical variables.
+- Examined the target variable and its categories.
+
+### 5.2 Data Cleaning and Preparation
+- Checked data quality and consistency.
+- Examined missing values and duplicate records.
+- Reviewed feature types and prepared data for analysis.
+- Created a cleaned dataset for subsequent analysis.
+
+### 5.3 Exploratory Data Analysis (Python)
+Performed exploratory analysis to understand workforce characteristics and attrition patterns.
+
+Areas explored:
+- Overall employee attrition distribution.
+- Attrition across departments and job roles.
+- Compensation and monthly income patterns.
+- Overtime and employee turnover.
+- Age group and job level comparisons.
+- Employee experience and organizational tenure.
+- Job satisfaction and work-life balance.
+
+### 5.4 SQL-Based Business Analysis (MySQL)
+Used SQL queries to investigate employee attrition from a business perspective.
+
+Analysis areas included:
+- Employee attrition across different job roles.
+- Department-wise workforce patterns.
+- Compensation-related comparisons.
+- Overtime and employee turnover patterns.
+- Employee experience and job-level analysis.
+
+### 5.5 Power BI Dashboard Development
+Developed an interactive dashboard to present HR metrics and workforce patterns.
+
+The dashboard supports:
+- Employee attrition monitoring.
+- Workforce segmentation.
+- Comparison of employee attributes.
+- Exploration of factors associated with employee turnover.
+- Visual communication of HR insights.
+
+## 6. Key Business Analysis Areas
+
+| Analysis Area | Business Purpose |
+|---|---|
+| Attrition Analysis | Understand employee turnover |
+| Salary Analysis | Examine compensation patterns |
+| Overtime Analysis | Investigate workload-related patterns |
+| Job Role Analysis | Compare attrition across job functions |
+| Age Group Analysis | Understand demographic patterns |
+| Job Level Analysis | Examine turnover across organizational levels |
+| Employee Tenure | Explore experience and retention patterns |
+| Satisfaction Analysis | Examine employee satisfaction attributes |
+
+## 7. Dashboard Preview
+
+The Power BI dashboard provides an interactive view of employee attrition and workforce-related metrics.
+
+![Employee Attrition Dashboard](Sample%20Dashboard.png)
+
+## 8. Business Recommendations
+
+Based on the analysis areas, organizations can consider the following actions:
+
+- **Compensation Review:** Evaluate salary structures and identify potential compensation-related retention challenges.
+- **Workload Management:** Monitor overtime patterns and review workload distribution.
+- **Employee Retention:** Investigate job roles and employee segments experiencing higher turnover.
+- **Career Development:** Review opportunities for career progression and professional growth.
+- **Employee Engagement:** Strengthen initiatives that support job satisfaction and work-life balance.
+- **HR Monitoring:** Use workforce metrics to regularly monitor employee retention trends.
+
+## 9. Repository Structure
+
+```text
+Employee-attrition-analysis/
+│
+├── Employee-attrition.ipynb
+├── Employee_attrition.sql
+├── Project Insights — Employee Attrition.txt
+├── employee_cleaned.csv
+├── employee_attrition.pbix
+├── Sample Dashboard.png
+├── README.md
+├── requirements.txt
+└── .gitignore
 ```
-Employee-Attrition/
-├── Employee-attrition.ipynb               # EDA, visualizations & analysis (Python)
-├── Employee_attrition.sql                 # 20+ SQL queries for attrition analysis
-├── employee_cleaned.csv                   # Cleaned dataset — 1,470 rows × 32 columns
-├── employee_attrition.pbix                # Interactive Power BI dashboard
-└── Project_Insights_Employee_Attrition.txt   # Key findings summary
-```
 
----
+## 10. How to Run the Project
 
-## Tech Stack
-
-| Tool | Use |
-|------|-----|
-| **Python** — pandas, matplotlib, seaborn | Data cleaning, EDA, visualizations |
-| **MySQL** | Structured attrition queries & aggregations |
-| **Power BI** | Interactive dashboard & reporting |
-| **Jupyter Notebook** | Analysis environment |
-
----
-
-## Dataset
-
-The dataset contains 1,470 employee records with 35 attributes spanning demographics, job details, satisfaction scores, financials, and tenure.
-
-<details>
-<summary><b>View all columns</b></summary>
-
-| Category | Columns |
-|----------|---------|
-| Demographics | Age, Gender, MaritalStatus, EducationField |
-| Job Details | Department, JobRole, JobLevel, BusinessTravel, OverTime |
-| Financials | MonthlyIncome, DailyRate, HourlyRate, PercentSalaryHike, StockOptionLevel |
-| Satisfaction | JobSatisfaction, EnvironmentSatisfaction, WorkLifeBalance, RelationshipSatisfaction, JobInvolvement |
-| Tenure | YearsAtCompany, YearsInCurrentRole, YearsSinceLastPromotion, YearsWithCurrManager, TotalWorkingYears |
-| Target | `Attrition` (Yes / No) |
-
-</details>
-
----
-
-## Key Findings
-
-### Top 5 Drivers of Attrition
-
-> These are the five factors most strongly correlated with employees leaving the organization.
-
-| # | Factor | Finding |
-|---|--------|---------|
-| 1 | 💰 Low Monthly Income | Attrited employees earned ₹4,787/mo avg vs ₹6,832/mo for retained — a ₹2,045 gap |
-| 2 | 🆕 Entry-Level Job (Level 1) | 143 of 237 attritions (60%) were at Job Level 1 |
-| 3 | ⏰ Overtime | 127 overtime workers left vs 110 non-overtime workers |
-| 4 | 💍 Single Marital Status | Single employees accounted for 120 of 237 attritions |
-| 5 | 🎯 Age Group 25–35 | 116 employees in career-building phase left |
-
----
-
-### Detailed Insights
-
-<details>
-<summary><b>Insight 1 — Department-wise Attrition</b></summary>
-
-| Department | Attrition Count |
-|------------|----------------|
-| Research & Development | 133 |
-| Sales | 92 |
-| Human Resources | 12 |
-
-R&D had the highest count, but Sales has a proportionally higher rate relative to its workforce size — making it more concerning.
-
-</details>
-
-<details>
-<summary><b>Insight 2 — Gender-wise Attrition</b></summary>
-
-| Gender | Attrition Count |
-|--------|----------------|
-| Male | 150 |
-| Female | 87 |
-
-Male employees are nearly **2× more likely** to leave than female employees.
-
-</details>
-
-<details>
-<summary><b>Insight 3 — Marital Status-wise Attrition</b></summary>
-
-| Marital Status | Attrition Count |
-|----------------|----------------|
-| Single | 120 |
-| Married | 84 |
-| Divorced | 33 |
-
-Single employees have fewer personal commitments, making job switches easier.
-
-</details>
-
-<details>
-<summary><b>Insight 4 — Overtime Impact</b></summary>
-
-| Overtime | Attrition Count |
-|----------|----------------|
-| Yes | 127 |
-| No | 110 |
-
-Overtime is a clear contributor to burnout and attrition.
-
-</details>
-
-<details>
-<summary><b>Insight 5 — Job Role-wise Attrition</b></summary>
-
-| Job Role | Attrition Count |
-|----------|----------------|
-| Laboratory Technician | 62 |
-| Sales Executive | 57 |
-| Research Scientist | 47 |
-| Manager | 5 |
-| Research Director | 2 |
-
-Junior roles are significantly more vulnerable than senior roles.
-
-</details>
-
-<details>
-<summary><b>Insight 6 — Job Level-wise Attrition</b></summary>
-
-Job Level 1 (Freshers / Entry-Level) accounts for **143 out of 237** attritions — the most critical finding. Early-career employees seek better pay and opportunities elsewhere.
-
-</details>
-
-<details>
-<summary><b>Insight 7 — Age Group-wise Attrition</b></summary>
-
-| Age Group | Attrition Count |
-|-----------|----------------|
-| 25–35 | 116 |
-| Below 25 | 44 |
-| 36–45 | 43 |
-| Above 45 | 34 |
-
-The **25–35 career-building phase** is the highest-risk window for attrition.
-
-</details>
-
-<details>
-<summary><b>Insight 8 — Salary-wise Attrition</b></summary>
-
-| Employee Group | Avg Monthly Income |
-|----------------|--------------------|
-| Attrited | ₹4,787 |
-| Retained | ₹6,832 |
-
-A gap of nearly ₹2,000/month — salary dissatisfaction is a leading predictor.
-
-</details>
-
-<details>
-<summary><b>Insight 9 — Tenure-wise Attrition</b></summary>
-
-| Employee Group | Avg Tenure |
-|----------------|-----------|
-| Attrited | 5.13 years |
-| Retained | 7.37 years |
-
-The first 5 years are the most critical window for retention strategies.
-
-</details>
-
-<details>
-<summary><b>Insight 10 — Business Travel-wise Attrition</b></summary>
-
-| Travel Frequency | Attrition Count |
-|------------------|----------------|
-| Travel Rarely | 156 |
-| Travel Frequently | 69 |
-| Non-Travel | 12 |
-
-Frequent travel creates fatigue and work-life imbalance contributing to attrition.
-
-</details>
-
-<details>
-<summary><b>Insight 11 — Education Field-wise Attrition</b></summary>
-
-| Education Field | Attrition Count |
-|-----------------|----------------|
-| Life Sciences | 89 |
-| Medical | 63 |
-| Marketing | 35 |
-| Technical Degree | 32 |
-
-Life Sciences and Medical graduates have high market demand — more external options available to them.
-
-</details>
-
----
-
-## How to Run
-
-### Python Notebook
+### Clone the Repository
 
 ```bash
-pip install pandas matplotlib seaborn jupyter
-jupyter notebook Employee-attrition.ipynb
+git clone https://github.com/kirana-23/Employee-attrition-analysis.git
 ```
 
-### SQL (MySQL)
+### Navigate to the Project Directory
 
-```sql
--- Step 1: Create database and import employee_cleaned.csv as a table
--- Step 2: Run the queries
-SOURCE Employee_attrition.sql;
+```bash
+cd Employee-attrition-analysis
 ```
 
-### Power BI
+### Install Dependencies
 
-Open `employee_attrition.pbix` in [Power BI Desktop](https://powerbi.microsoft.com/desktop/) (free).
+```bash
+pip install -r requirements.txt
+```
 
----
+### Run the Python Notebook
 
-## Conclusion
+```bash
+jupyter notebook
+```
 
-The analysis of 1,470 employee records reveals that attrition is driven by a combination of financial, personal, and work-environment factors. Organizations can significantly reduce turnover by:
+Open `Employee-attrition.ipynb` and execute the notebook cells.
 
-- ✅ Offering competitive salaries especially at entry levels
-- ✅ Building structured career growth paths for junior employees
-- ✅ Monitoring and limiting overtime hours to prevent burnout
-- ✅ Investing in engagement programs targeting the 25–35 age group
+Ensure the cleaned dataset is available in the project directory if the notebook loads `employee_cleaned.csv`.
 
----
+### Run the SQL Analysis
 
-## Author
+Open `Employee_attrition.sql` in MySQL Workbench or another compatible MySQL environment and execute the queries against the prepared employee dataset.
+
+### Explore the Dashboard
+
+Open `employee_attrition.pbix` using Power BI Desktop to explore the interactive HR analytics dashboard.
+
+## 11. Project Files
+
+| File | Description |
+|---|---|
+| `Employee-attrition.ipynb` | Python data analysis notebook |
+| `Employee_attrition.sql` | SQL business analysis queries |
+| `employee_cleaned.csv` | Prepared employee dataset |
+| `employee_attrition.pbix` | Power BI dashboard |
+| `Sample Dashboard.png` | Dashboard preview |
+| `Project Insights — Employee Attrition.txt` | Project findings and insights |
+
+## 12. Future Enhancements
+
+- Develop employee attrition prediction models.
+- Incorporate additional HR performance indicators.
+- Expand workforce segmentation and retention analysis.
+- Enhance dashboard reporting with additional HR KPIs.
+
+## 13. Author
 
 **Kirana B**
 
-[![GitHub](https://img.shields.io/badge/GitHub-kirana--23-181717?style=for-the-badge&logo=github)](https://github.com/kirana-23)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-kirana--kira23-0A66C2?style=for-the-badge&logo=linkedin)](https://www.linkedin.com/in/kirana-kira23)
-[![Email](https://img.shields.io/badge/Email-kirana232004@gmail.com-D14836?style=for-the-badge&logo=gmail)](mailto:kirana232004@gmail.com)
+GitHub: [kirana-23](https://github.com/kirana-23)
 
 ---
 
-<div align="center">
-  <sub>for learning and portfolio purposes</sub>
-</div>
+*This project demonstrates the application of Python, SQL, and Power BI in solving business problems through exploratory data analysis, workforce analytics, and data visualization.*
